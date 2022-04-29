@@ -5,7 +5,7 @@ if [ -d ~/.electrumx-installer ]; then
     exit 1
 fi
 if which git > /dev/null 2>&1; then
-    git clone https://github.com/bauerj/electrumx-installer ~/.electrumx-installer
+    git clone -b python38 https://github.com/spaceexpanse/electrumx-installer ~/.electrumx-installer
     cd ~/.electrumx-installer/
 else
     which wget > /dev/null 2>&1 && which unzip > /dev/null 2>&1 || { echo "Please install git or wget and unzip" && exit 1 ; }
