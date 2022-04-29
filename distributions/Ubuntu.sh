@@ -18,7 +18,7 @@ function install_python38 {
 	add-apt-repository -y ppa:deadsnakes/ppa
 	$APT update
 	packages="python3.8 python3.8-dev python3.8-distutils"
-	$APT install -y $packages || _error "Could not install package python3.7" 1
+	$APT install -y $packages || _error "Could not install package python3.8" 1
 }
 
 function binary_install_rocksdb {
