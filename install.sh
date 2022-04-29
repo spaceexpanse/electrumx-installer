@@ -40,7 +40,7 @@ Install electrumx.
  -v --verbose				   Enable verbose logging
  -d --dbdir dir                Set database directory (default: /db/)
  --update                      Update previously installed version
- --update-python			   Install Python 3.7 and use with electrumx (doesn't remove system installation of Python 3)
+ --update-python			   Install Python 3.8 and use with electrumx (doesn't remove system installation of Python 3)
  --leveldb                     Use LevelDB instead of RocksDB
 --electrumx-git-url url        Install ElectrumX from this URL instead
 --electrumx-git-branch branch  Install specific branch of ElectrumX repository
@@ -149,7 +149,7 @@ fi
 
 python=""
 
-for _python in python3 python3.7; do
+for _python in python3 python3.8; do
 	if which $_python; then
 	python=$_python
 	fi
